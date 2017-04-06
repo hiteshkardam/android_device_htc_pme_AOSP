@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The CyanogenMod Project
+#
+# Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,14 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-$(call inherit-product, device/htc/pme/full_pme.mk)
-$(call inherit-product, vendor/pure/configs/pure_phone.mk)
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := pme
-PRODUCT_NAME := aosp_pme
-PRODUCT_BRAND := HTC
-PRODUCT_MODEL := HTC 10
-PRODUCT_MANUFACTURER := HTC
-PRODUCT_RELEASE_NAME := pme
+add_lunch_combo aosp_pme-userdebug
