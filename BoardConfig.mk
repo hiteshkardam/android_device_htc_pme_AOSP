@@ -63,7 +63,7 @@ BOARD_RAMDISK_OFFSET     := 0x02200000
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/htc/msm8996
-TARGET_KERNEL_CONFIG := pme_defconfig
+TARGET_KERNEL_CONFIG := gg_defconfig
 
 # Audio
 #AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -103,10 +103,10 @@ TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_ext
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/cmhw \
-    hardware/cyanogen/cmhw
+#BOARD_USES_CYANOGEN_HARDWARE := true
+#BOARD_HARDWARE_CLASS += \
+#    $(DEVICE_PATH)/cmhw \
+#    hardware/cyanogen/cmhw
 
 # CNE and DPM
 BOARD_USES_QCNE := true
